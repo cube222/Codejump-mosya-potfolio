@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  font-size:14px;
+}
+
+/* header */
+
+header {
+  background: white;
+  padding: 10px 18px;
+}
+
+header img {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+/* hero */
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: calc(100vh - 60px);
+  object-fit: cover;
+  max-width: 1920px;
+}
+
+/* about */
+
+.about {
+  padding: 0 40px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.photo {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.photo img {
+  border-radius: 50%;
+}
+
+.profile {
+  margin-top: 8px;
+}
+
+
+.profile h3 {
+  margin-top: 8px;
+}
+
+.profile p {
+  margin-top: 8px;
+}
+
+.sub-title h2 {
+  margin-top: 80px;
+}
+
+
+/* bicycle */
+
+.bicycles {
+  padding: 0 16px 0;
+  text-align: center;
+}
+
+.bicycles .sub-title {
+  padding: 0 16px 64px;
+}
+
+.bicycles img {
+  height: 100%;
+  width: calc(100vw - 60px);
+  object-fit: cover;
+  max-width: 640px;
+}
+
+.bicycles h3 {
+  margin-top: 8px ;
+}
+
+.bicycles p {
+  margin: 8px 0 32px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 32px 0;
+}
+
+small {
+  font-size: 8px;
+  color: #777;
+}
+
+
+@media(min-width: 600px) {
+  /* header */
+  .hero img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  max-width: 1920px;
+  }
+
+  /* about */
+  .about {
+    padding: 0 16px;
+    max-width: 550px;
+  }
+
+  .profiles {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  /* bicycle */
+
+  .bicycle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .bicycle div {
+     width: calc((100% - 32px) / 3);
+  }
+
+  .bicycle img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+
+}
